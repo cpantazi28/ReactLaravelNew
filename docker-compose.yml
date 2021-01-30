@@ -1,0 +1,20 @@
+version: "3.7"
+services:
+  app:
+    build: .
+      # args: 
+      #    app_home: /var/www/html 
+      #    project_name: Laravel-React-Zinishis
+    image: react-laravel
+    container_name: app_running
+    working_dir: /var/www/html/
+    tty: true
+    ports: 
+      - 80:80
+    volumes:
+      - ./:/var/www/html/Laravel-React-Zinishis
+#     networks:
+#       - dev
+# networks:
+#   dev:
+#     driver: bridge
