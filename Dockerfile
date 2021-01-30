@@ -53,12 +53,12 @@ COPY . ./$project_name
 ##RUN composer create-project laravel/laravel $project_name
 WORKDIR $app_home/$project_name
 
-RUN chown -R www-data:www-data ./storage
+# RUN chown -R www-data:www-data ./storage
 
-RUN composer require laravel/ui
-RUN php artisan ui react --auth
+# RUN composer require laravel/ui
+# RUN php artisan ui react --auth
 
-RUN npm install
+# RUN npm install
 #RUN npm run watch
 
 #USER $user

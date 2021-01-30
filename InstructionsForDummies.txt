@@ -3,8 +3,10 @@
 2) docker-compose up -d
 
 3) docker-compose exec app /bin/bash
-   npm run watch // if you want to compile your code every time that you make a change
+   $composer install
+   
+   $npm run watch // if you want to compile your code every time that you make a change
    or
-   npm run dev // to compile once
+   $npm run dev // to compile once
 
 4) Enjoy...elisan ta neevra m 4 ftomaes!!!!
